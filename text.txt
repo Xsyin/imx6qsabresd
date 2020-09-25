@@ -1,0 +1,181 @@
+Generally Necessary:                                                                            
+- cgroup hierarchy: nonexistent??                                                               
+    (see https://github.com/tianon/cgroupfs-mount)                                              
+- CONFIG_NAMESPACES: missing                                                                    
+- CONFIG_NET_NS: missing                                                                        
+- CONFIG_PID_NS: missing                                                                        
+- CONFIG_IPC_NS: missing                                                                        
+- CONFIG_UTS_NS: missing                                                                        
+- CONFIG_CGROUPS: enabled                                                                       
+- CONFIG_CGROUP_CPUACCT: missing                                                                
+- CONFIG_CGROUP_DEVICE: missing                                                                 
+- CONFIG_CGROUP_FREEZER: missing                                                                
+- CONFIG_CGROUP_SCHED: missing                                                                  
+- CONFIG_CPUSETS: missing                                                                       
+- CONFIG_MEMCG: missing                                                                         
+- CONFIG_KEYS: enabled                                                                          
+- CONFIG_VETH: missing                                                                          
+- CONFIG_BRIDGE: missing                                                                        
+- CONFIG_BRIDGE_NETFILTER: missing                                                              
+- CONFIG_NF_NAT_IPV4: missing                                                                   
+- CONFIG_IP_NF_FILTER: missing                                                                  
+- CONFIG_IP_NF_TARGET_MASQUERADE: missing                                                       
+- CONFIG_NETFILTER_XT_MATCH_ADDRTYPE: missing                                                   
+- CONFIG_NETFILTER_XT_MATCH_CONNTRACK: missing                                                  
+- CONFIG_NETFILTER_XT_MATCH_IPVS: missing                                                       
+- CONFIG_IP_NF_NAT: missing                                                                     
+- CONFIG_NF_NAT: missing                                                                        
+- CONFIG_NF_NAT_NEEDED: missing                                                                 
+- CONFIG_POSIX_MQUEUE: missing                                                                  
+                                                                                                
+Optional Features:                                                                              
+- CONFIG_USER_NS: missing                                                                       
+- CONFIG_SECCOMP: missing                                                                       
+- CONFIG_CGROUP_PIDS: missing                                                                   
+- CONFIG_MEMCG_SWAP: missing                                                                    
+- CONFIG_MEMCG_SWAP_ENABLED: missing                                                            
+- CONFIG_BLK_CGROUP: missing                                                                    
+- CONFIG_BLK_DEV_THROTTLING: missing                                                            
+- CONFIG_IOSCHED_CFQ: enabled                                                                   
+- CONFIG_CFQ_GROUP_IOSCHED: missing                                                             
+- CONFIG_CGROUP_PERF: missing                                                                   
+- CONFIG_CGROUP_HUGETLB: missing                                                                
+- CONFIG_NET_CLS_CGROUP: missing                                                                
+- CONFIG_CGROUP_NET_PRIO: missing                                                               
+- CONFIG_CFS_BANDWIDTH: missing                                                                 
+- CONFIG_FAIR_GROUP_SCHED: missing                                                              
+- CONFIG_RT_GROUP_SCHED: missing                                                                
+- CONFIG_IP_NF_TARGET_REDIRECT: missing                                                         
+- CONFIG_IP_VS: missing                                                                         
+- CONFIG_IP_VS_NFCT: missing                                                                    
+- CONFIG_IP_VS_PROTO_TCP: missing                                                               
+- CONFIG_IP_VS_PROTO_UDP: missing                                                               
+- CONFIG_IP_VS_RR: missing                                                                      
+- CONFIG_EXT3_FS: enabled                                                                       
+- CONFIG_EXT3_FS_XATTR: missing                                                                 
+- CONFIG_EXT3_FS_POSIX_ACL: enabled                                                             
+- CONFIG_EXT3_FS_SECURITY: enabled                                                              
+    (enable these ext3 configs if you are using ext3 as backing filesystem)                     
+- CONFIG_EXT4_FS: enabled                                                                       
+- CONFIG_EXT4_FS_POSIX_ACL: enabled                                                             
+- CONFIG_EXT4_FS_SECURITY: enabled                                                              
+- Network Drivers:                                                                              
+  - "overlay":                                                                                  
+    - CONFIG_VXLAN: missing                                                                     
+    - CONFIG_BRIDGE_VLAN_FILTERING: missing                                                     
+      Optional (for encrypted networks):                                                        
+      - CONFIG_CRYPTO: enabled                                                                  
+      - CONFIG_CRYPTO_AEAD: enabled                                                             
+      - CONFIG_CRYPTO_GCM: enabled                                                              
+      - CONFIG_CRYPTO_SEQIV: enabled                                                            
+      - CONFIG_CRYPTO_GHASH: enabled                                                            
+      - CONFIG_XFRM: enabled                                                                    
+      - CONFIG_XFRM_USER: missing                                                               
+      - CONFIG_XFRM_ALGO: missing                                                               
+      - CONFIG_INET_ESP: missing                                                                
+      - CONFIG_INET_XFRM_MODE_TRANSPORT: missing                                                
+  - "ipvlan":                                                                                   
+    - CONFIG_IPVLAN: missing                                                                    
+  - "macvlan":                                                                                  
+    - CONFIG_MACVLAN: missing                                                                   
+    - CONFIG_DUMMY: missing                                                                     
+  - "ftp,tftp client in container":                                                             
+    - CONFIG_NF_NAT_FTP: missing                                                                
+    - CONFIG_NF_CONNTRACK_FTP: missing                                                          
+    - CONFIG_NF_NAT_TFTP: missing                                                               
+    - CONFIG_NF_CONNTRACK_TFTP: missing                                                         
+- Storage Drivers:                                                                              
+  - "aufs":                                                                                     
+    - CONFIG_AUFS_FS: missing                                                                   
+  - "btrfs":                                                                                    
+    - CONFIG_BTRFS_FS: missing                                                                  
+    - CONFIG_BTRFS_FS_POSIX_ACL: missing                                                        
+  - "devicemapper":                                                                             
+    - CONFIG_BLK_DEV_DM: missing                                                                
+    - CONFIG_DM_THIN_PROVISIONING: missing                                                      
+  - "overlay":                                                                                  
+    - CONFIG_OVERLAY_FS: missing                                                                
+  - "zfs":                                                                                      
+    - /dev/zfs: missing                                                                         
+    - zfs command: missing                                                                      
+    - zpool command: missing 
+
+    CONFIG_MEMCG=y
+CONFIG_MEMCG_SWAP=y
+CONFIG_MEMCG_SWAP_ENABLED=y
+CONFIG_BLK_CGROUP=y
+CONFIG_BLK_DEV_THROTTLING=y
+CONFIG_CGROUP_SCHED=y
+CONFIG_CGROUP_PIDS=y
+CONFIG_CGROUP_RDMA=y
+CONFIG_CGROUP_FREEZER=y
+CONFIG_CGROUP_HUGETLB=y
+CONFIG_HUGETLB_PAGE=y
+CONFIG_CPUSETS=y
+CONFIG_CGROUP_DEVICE=y
+CONFIG_CGROUP_CPUACCT=y
+CONFIG_CGROUP_PERF=y
+CONFIG_NAMESPACES=y
+CONFIG_UTS_NS=y
+CONFIG_IPC_NS=y
+CONFIG_USER_NS=y
+CONFIG_PID_NS=y
+CONFIG_NET_NS=y
+CONFIG_SCHED_AUTOGROUP=y
+CONFIG_BRIDGE=y
+CONFIG_BRIDGE_NETFILTER=y
+CONFIG_BRIDGE_VLAN_FILTERING=y
+CONFIG_NETFILTER=y
+CONFIG_NETFILTER_ADVANCED=y
+CONFIG_NF_NAT_IPV4=y
+CONFIG_NF_CONNTRACK_IPV4=y
+CONFIG_IP_NF_FILTER=y
+CONFIG_IP_NF_IPTABLES=y
+CONFIG_IP_NF_TARGET_MASQUERADE=y
+CONFIG_IP_NF_NAT=y
+CONFIG_NETFILTER_XT_MATCH_ADDRTYPE=y
+CONFIG_NETFILTER_XT_MATCH_CONNTRACK=y
+CONFIG_NETFILTER_XT_MATCH_IPVS=y
+CONFIG_NF_NAT=y
+CONFIG_NF_NAT_NEEDED=y
+CONFIG_POSIX_MQUEUE=y
+CONFIG_POSIX_MQUEUE_SYSCTL=y
+CONFIG_SECCOMP=y
+CONFIG_CFQ_GROUP_IOSCHED=y
+CONFIG_NET_CLS_CGROUP=y
+CONFIG_CGROUP_NET_PRIO=y
+CONFIG_CFS_BANDWIDTH=y
+CONFIG_RT_GROUP_SCHED=y
+CONFIG_IP_NF_TARGET_REDIRECT=y
+CONFIG_IP_VS=y  
+CONFIG_IP_VS_NFCT=y                                                          
+CONFIG_IP_VS_PROTO_TCP=y                                                
+CONFIG_IP_VS_PROTO_UDP=y                                                     
+CONFIG_IP_VS_RR=y
+CONFIG_VXLAN=y
+CONFIG_XFRM_USER=y
+CONFIG_XFRM_ALGO=y
+CONFIG_INET_ESP=y
+CONFIG_INET_XFRM_MODE_TRANSPORT=y
+CONFIG_MACVLAN=y
+CONFIG_IPVLAN=y
+CONFIG_DUMMY=y
+CONFIG_NF_NAT_FTP=y
+CONFIG_NF_NAT_TFTP=y
+CONFIG_NF_CONNTRACK=y
+CONFIG_NF_CONNTRACK_TFTP=y
+CONFIG_NF_CONNTRACK_FTP=y
+CONFIG_OVERLAY_FS=y
+CONFIG_BTRFS_FS=y
+CONFIG_BTRFS_FS_POSIX_ACL=y
+CONFIG_MD=y
+CONFIG_BLK_DEV_DM_BUILTIN=y
+CONFIG_BLK_DEV_DM=y
+CONFIG_BLK_DEV_MD=y
+CONFIG_DM_THIN_PROVISIONING=y
+CONFIG_AUFS_FS=y
+CONFIG_NET_SCHED=y
+CONFIG_NET_CLS_CGROUP=y
+
+CONFIG_IPV6=m
+CONFIG_NET_L3_MASTER_DEV=y

@@ -1,0 +1,19 @@
+user_ta_header.o: \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/src/user_ta_header.c \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/compiler.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/tee_ta_api.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/tee_api_defines.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/tee_api_types.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/stdint.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/limits.h \
+ /home/yin/imx-optee/aarch32/lib/gcc/arm-linux-gnueabihf/6.5.0/include/stdbool.h \
+ /home/yin/imx-optee/aarch32/lib/gcc/arm-linux-gnueabihf/6.5.0/include/stddef.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/tee_internal_api_extensions.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/trace.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/trace_levels.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/stdio.h \
+ /home/yin/imx-optee/aarch32/lib/gcc/arm-linux-gnueabihf/6.5.0/include/stdarg.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/tee_api_defines_extensions.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/user_ta_header.h \
+ /home/yin/imx-optee/imx-optee-os/out/arm-plat-imx/export-ta_arm32/include/util.h \
+ user_ta_header_defines.h include/hotp_ta.h
