@@ -1,0 +1,7 @@
+*.[oa]
+*.cmd
+*~
+build/
+out/
+*.tmp
+*.su
